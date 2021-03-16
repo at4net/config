@@ -45,7 +45,7 @@ class Factory implements RequiresMandatoryOptions, RequiresConfig
     /**
      * @return string[] List with mandatory options
      */
-    public function mandatoryOptions()
+    public function mandatoryOptions(): iterable
     {
         return [];
     }
@@ -63,7 +63,7 @@ class Factory implements RequiresMandatoryOptions, RequiresConfig
         ];
     }
 
-    public function dimensions() {
+    public function dimensions(): iterable {
         return [];
     }
 }
